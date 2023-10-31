@@ -6,7 +6,7 @@
 
     $MySQLiconn = new MySQLi(_HOST_NAME,_DATABASE_USER_NAME, _DATABASE_PASSWORD,_DATABASE_NAME);
 
-    if($MySQLiconn->connect_errno)
+    if($MySQLiconn->connect_error)
     {
         die("ERROR: > ".$MySQLiconn->connect_error);
     }
